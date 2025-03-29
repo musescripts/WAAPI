@@ -1,0 +1,35 @@
+{
+    "version":2,
+    "commands":[
+        {
+            "id": "ak.play_selected_object",
+            "displayName": "Play Selected Object",
+            "program": "%APPDATA%\\Local\\Microsoft\\WindowsApps\\pythonw.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args": "pathToScript\\PlaySelectedObject.py",
+            "cwd": "",
+            "contextMenu": {
+                "basePath": "General",
+                "enabledFor": "Sound,ActorMixer,SwitchContainer,RandomSequenceContainer"
+            },
+            "mainMenu": {
+                "basePath": "WAAPI"
+            }
+        },
+        {
+            "id": "ak.stop_selected_object",
+            "displayName": "Stop Selected Object",
+            "program": "%APPDATA%\\Local\\Microsoft\\WindowsApps\\pythonw.exe",
+            "startMode": "MultipleSelectionSingleProcessSpaceSeparated",
+            "args": "pathToScript\\StopSelectedObject.py",
+            "cwd": "",
+            "contextMenu": {
+                "basePath": "General",
+                "enabledFor": "Sound,ActorMixer,SwitchContainer,RandomSequenceContainer"
+            },
+            "mainMenu": {
+                "basePath": "WAAPI"
+            }
+        }
+    ]
+}
